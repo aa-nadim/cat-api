@@ -1,10 +1,13 @@
+// routers/router.go
 package routers
 
 import (
 	"cat-api/controllers"
-	beego "github.com/beego/beego/v2/server/web"
+
+	"github.com/beego/beego/v2/server/web"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	// Route to the main controller
+	web.Router("/", &controllers.MainController{})
 }

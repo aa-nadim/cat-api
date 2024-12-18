@@ -1,15 +1,18 @@
-myproject/
+cat-api/
 ├── conf/
-│   └── app.conf       # Configuration file
+│   └── app.conf
 ├── controllers/
-│   └── default.go     # Controller logic
-├── models/            # Database models (optional)
+│   └── default.go
+├── models/
 ├── routers/
-│   └── router.go      # Route definitions
-├── static/            # Static files (CSS, JS, images)
-├── views/             # HTML templates
-├── main.go            # Application entry point
-└── tests/             # Unit tests
+│   └── router.go
+├── static/
+├── tests/
+├── views/
+│   └── index.tpl
+├── main.go
+└── go.mod
+
 
 
 Key Files:
