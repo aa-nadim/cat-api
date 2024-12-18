@@ -15,7 +15,7 @@ type MainController struct {
 
 // CatImage structure to hold data for the image
 type CatImage struct {
-	URL string `json:"url"`
+	URL string `json:"url"` // Correct JSON tag format
 }
 
 func (c *MainController) Get() {
@@ -62,6 +62,9 @@ func (c *MainController) fetchCatImages(ch chan<- []CatImage) {
 		fmt.Println("Error reading response body:", err)
 		return
 	}
+
+	// Print the API response to the terminal for inspection
+	fmt.Println("API Response:", string(body))
 
 	// Parse the JSON response into a slice of CatImage objects
 	var images []CatImage

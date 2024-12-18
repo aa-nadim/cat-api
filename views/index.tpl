@@ -11,9 +11,10 @@
             text-align: center;
         }
         .cat-card {
-            position: relative;
+            display: none;
+        }
+        .active {
             display: inline-block;
-            margin: 20px 0;
         }
         .cat-image {
             width: 100%;
@@ -31,7 +32,7 @@
     <div id="slideshow">
         {{range .Cats}}
         <div class="cat-card">
-            <img class="cat-image" id="catImage" src="{{.URL}}" alt="Cat Image" />
+            <img class="cat-image" src="{{.URL}}" alt="Cat Image" />
         </div>
         {{end}}
         <div>
@@ -39,6 +40,7 @@
             <button id="next">Next</button>
         </div>
     </div>
+
     <script src="/static/js/slideshow.js"></script>
 </body>
 </html>

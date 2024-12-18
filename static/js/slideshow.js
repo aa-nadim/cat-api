@@ -1,27 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.cat-card');
     let currentIndex = 0;
 
-    // List of cat image URLs (passed from the backend)
-    const catImages = {{.Cats | json}};
-
-    // Update the image on the page
-    function updateImage() {
-        const imageElement = document.getElementById('catImage');
-        imageElement.src = catImages[currentIndex].URL;
+    // Function to show the current slide
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
     }
 
-    // Handle the "Previous" button click
-    document.getElementById('prev').addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + catImages.length) % catImages.length;
-        updateImage();
+    // Event listeners for buttons
+    document.getElementById('prev').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
     });
 
-    // Handle the "Next" button click
-    document.getElementById('next').addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % catImages.length;
-        updateImage();
+    document.getElementById('next').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
     });
 
-    // Initial image update
-    updateImage();
+    // Initially show the first slide
+    showSlide(currentIndex);
 });
