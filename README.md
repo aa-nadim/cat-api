@@ -44,7 +44,7 @@
 if Failed--->
     
     export GO111MODULE=on
-    go mod init cat-api
+    go mod init
     go mod tidy
 
     bee run
