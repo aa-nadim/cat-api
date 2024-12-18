@@ -21,8 +21,9 @@
 
 -------
 
+    mkdir -p ~/go/src/
     cd ~/go/src/
-
+ 
 -------
 
     bee new myproject
