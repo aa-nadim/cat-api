@@ -32,3 +32,19 @@
 -------
 
     http://localhost:8080/
+
+------
+
+if Failed--->
+    
+    export GO111MODULE=on
+    go mod init cat-api
+    go mod tidy
+
+    bee run
+
+-------
+
+    http://localhost:8080/
+
+------
