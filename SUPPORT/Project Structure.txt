@@ -1,0 +1,39 @@
+myproject/
+├── conf/
+│   └── app.conf       # Configuration file
+├── controllers/
+│   └── default.go     # Controller logic
+├── models/            # Database models (optional)
+├── routers/
+│   └── router.go      # Route definitions
+├── static/            # Static files (CSS, JS, images)
+├── views/             # HTML templates
+├── main.go            # Application entry point
+└── tests/             # Unit tests
+
+
+Key Files:
+----------
+    main.go:
+
+The entry point of your application.
+Starts the server and handles initial setup.
+--------------
+    app.conf:
+
+Contains application configurations like port, database, etc.
+--------------
+    router.go:
+
+Maps URLs to controllers.
+--------------
+    Controllers:
+
+Handle the business logic.
+----------
+    Views:
+
+Store HTML templates.
+------------
+    Static:
+Holds static files like CSS, JS, and images.    
