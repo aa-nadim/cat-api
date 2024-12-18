@@ -1,18 +1,39 @@
-Install Beego:
+getting started with Golang and Beego on Ubuntu:
+________________________________________________
 
------------------
-See Go version:
+Step 1: Install Go (Golang)
+---------------------------
+1. Install Go: 
+
+    wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+
+2. Extract the Archive:
+
+    sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+
+3. Set up Environment Variables: Add Go to your PATH by editing ~/.bashrc or ~/.zshrc:
+
+    echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
+    source ~/.bashrc
+
+4. Verify Installation:
 
     go version
 
------------------
+________________________________________________
+Step 2: Install Beego Framework
 
-Install Beego CLI:
+1. Install Beego CLI:
 
     go install github.com/beego/bee/v2@latest
 
------------------
-Run the Application:
+2. Add Beego CLI to Your PATH:
+
+    echo "export PATH=\$PATH:\$(go env GOPATH)/bin" >> ~/.bashrc
+    source ~/.bashrc
+
+3. Verify Bee Installation:
+
     bee version
-    bee run
------------------
+________________________________________________
+Step 3: Create a New Beego Project
