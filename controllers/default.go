@@ -1,3 +1,4 @@
+// controllers/default.go
 package controllers
 
 import (
@@ -35,7 +36,7 @@ func (c *MainController) Get() {
 
 func (c *MainController) fetchCatImages(ch chan<- []CatImage) {
 	// TheCatAPI URL
-	apiURL := "https://api.thecatapi.com/v1/images/search?limit=5"
+	apiURL := "https://api.thecatapi.com/v1/images/search?limit=10"
 
 	// Send GET request to TheCatAPI
 	req, err := http.NewRequest("GET", apiURL, nil)

@@ -1,3 +1,4 @@
+/* views/index.tpl */
 <!DOCTYPE html>
 <html lang="en">
 <head>

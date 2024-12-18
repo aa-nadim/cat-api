@@ -1,3 +1,4 @@
+// static/js/script.js
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.cat-card');
     let currentIndex = 0;
