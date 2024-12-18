@@ -1,0 +1,34 @@
+    go version
+
+-------
+
+    go install github.com/beego/bee/v2@latest
+
+-------
+
+    echo "export PATH=\$PATH:\$(go env GOPATH)/bin" >> ~/.bashrc
+    source ~/.bashrc
+
+-------
+
+    bee version
+
+-------
+
+    cd ~/go/src/
+
+-------
+
+    bee new myproject
+
+-------
+
+    cd myproject
+
+-------
+
+    bee run
+
+-------
+
+    http://localhost:8080/
