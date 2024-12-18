@@ -11,6 +11,7 @@
     go install github.com/beego/bee/v2@latest
 
 -------
+For Linux:
 
     echo "export PATH=\$PATH:\$(go env GOPATH)/bin" >> ~/.bashrc
     source ~/.bashrc
@@ -21,8 +22,8 @@
 
 -------
 
-    mkdir -p ~/go/src/
-    cd ~/go/src/
+    mkdir -p ~/go/src/        "Windows===> mkdir C:\Users\ASUS\go\src\"
+    cd ~/go/src/              "Windows===> cd C:\Users\ASUS\go\src\"
  
 -------
 
