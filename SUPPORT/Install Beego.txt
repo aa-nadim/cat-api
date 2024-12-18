@@ -1,0 +1,18 @@
+Install Beego:
+
+-----------------
+See Go version:
+
+    go version
+
+-----------------
+
+Install Beego CLI:
+
+    go install github.com/beego/bee/v2@latest
+
+-----------------
+Run the Application:
+    bee version
+    bee run
+-----------------
